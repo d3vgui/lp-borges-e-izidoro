@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 90% !important;
+}
+
+@media (max-width: 768px){
+  .container{
+    width: 95% !important;
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--secondary);
+}
