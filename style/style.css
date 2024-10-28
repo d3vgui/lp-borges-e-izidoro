@@ -1,107 +1,117 @@
-header {
-  background: transparent;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 10;
+#logo img {
+  height: 60px;
 }
 
-.nav-bar {
+#header {
+  box-sizing: border-box;
+  padding: 17px 55px;
   display: flex;
   justify-content: space-between;
-  padding: 1.5rem 6rem;
+  background: transparent;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  transition: background-color 0.4s ease;
 }
 
-.logo {
+#header.scrolled {
+  background-color: var(--main);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid var(--secondary);
+}
+
+#nav{
   display: flex;
   align-items: center;
 }
 
-.logo h1 {
-  color: #fff;
-}
-
-.nav-list {
+#menu{
   display: flex;
-  align-items: center;
-}
-
-.nav-list ul {
-  display: flex;
-  justify-content: center;
   list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
-.nav-item {
-  margin: 0 15px;
-}
-
-.nav-link {
-  text-decoration: none;
-  font-size: 1.15rem;
-  color: #fff;
-  font-weight: 400;
-}
-
-.login-button button {
-  border: none;
+#menu a {
+  display: block;
   padding: 10px 15px;
-  border-radius: 5px;
-  background-color: #0187a7;
-}
-
-.login-button button a {
+  color: var(--secondary);
   text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.1rem;
+  font-weight: 550;
 }
 
-.mobile-menu-icon {
+#menu li{
+  transition: 0.4s;
+}
+
+#menu li:hover{
+  transform: scale(1.05);
+}
+
+#btn-mobile {
   display: none;
 }
 
-.mobile-menu {
-  display: none;
-}
+@media (max-width: 600px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background-color: var(--secondary);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+    
+  }
 
-@media screen and (max-width: 730px) {
-  .nav-bar {
-      padding: 1.5rem 4rem;
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--secondary);
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
   }
-  .nav-item {
-      display: none;
+  #nav.active #hamburger {
+    border-top-color: transparent;
   }
-  .login-button {
-      display: none;
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
   }
-  .mobile-menu-icon {
-      display: block;
-  }
-  .mobile-menu-icon button {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-  }
-  .mobile-menu ul {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      padding-bottom: 1rem;
-  }
-  .mobile-menu .nav-item {
-      display: block;
-      padding-top: 1.2rem;
-  }
-  .mobile-menu .login-button {
-      display: block;
-      padding: 1rem 2rem;
-  }
-  .mobile-menu .login-button button {
-      width: 100%;
-  }
-  .open {
-      display: block;
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
 }
 
@@ -112,7 +122,160 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 110vh;
+  height: 120vh;
   background-color: #000000a1;
   background-blend-mode: color;
+}
+
+#section-one .content-sec-one{
+  display: flex;
+  align-items: center;
+  height: 120vh;
+}
+
+#section-one .text h2{
+  font-family: 'CarlaSans';
+  color: var(--secondary);
+  font-size: 40px;
+}
+
+#section-one .text p{
+  color: var(--secondary);
+  margin-top: 15px;
+}
+
+#section-one .content-left{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+#section-one .content-left .line{
+  height: 130px;
+  width: 7px;
+  background-color: var(--secondary);
+}
+
+#section-one .btn-contact-us{
+  margin-top: 30px;
+}
+
+#section-one .btn-contact-us a{
+  padding: 15px 25px;
+  background-color: var(--main);
+  color: var(--secondary);
+  text-decoration: none;
+  border-radius: 7px 7px 30px 7px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+
+#section-one .btn-contact-us i{
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#section-one .btn-contact-us a:hover{
+  margin-left: 30px;
+  background-color: var(--secondary);
+  color: var(--main);
+}
+
+/* ----- SECTION TWO ----- */
+
+#section-two{
+  padding: 80px 0px;
+  background-color: var(--secondary);
+}
+
+#section-two .title h2{
+  color: var(--main);
+  font-family: 'CarlaSans';
+  font-weight: 600;
+  text-align: center;
+}
+
+#section-two .content-sec-two{
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+#section-two .content-left .box{
+  height: 400px;
+  width: 400px;
+  background-color: var(--tertiary);
+}
+
+#section-two .content-right p{
+  color: var(--main);
+  font-weight: 510;
+}
+
+#section-two .content-right span{
+  font-family: 'CarlaSans';
+  font-weight: 600;
+}
+
+#section-two .btn-next{
+  margin-top: 30px;
+  width: fit-content;
+  transition: 0.3s;
+}
+
+#section-two .btn-next a{
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--main);
+  padding: 15px 25px;
+  border-radius: 7px 7px 30px 7px;
+  font-weight: 570;
+  transition: 0.3s;
+  font-family: 'CarlaSans';
+}
+
+#section-two .btn-next:hover {
+  transform: translateY(10px);
+}
+
+#section-two .btn-next a:hover{
+  background-color: var(--secondary);
+  border: 1px solid var(--main);
+  color: var(--main);
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px); 
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#section-two .btn-next i{
+  margin-left: 10px;
+  animation: upDown 2s  infinite;
+}
+
+/* ----- SECTION THREE ----- */
+
+#section-three{
+  padding: 80px 0;
+  background-color: var(--white);
+}
+
+#section-three .title h2{
+  font-family: 'CarlaSans';
+  text-align: center;
+  font-weight: 570;
+  color: var(--main);
+}
+
+#section-three .content-sec-three{
+  display: flex;
 }

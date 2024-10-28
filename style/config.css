@@ -1,9 +1,15 @@
+@font-face {
+  font-family: 'CarlaSans';
+  src: url(/font/CarlaSansRegular.ttf);
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', 'sans-serif';
 }
+
 
 .container {
   margin-right: auto;
