@@ -278,4 +278,129 @@
 
 #section-three .content-sec-three{
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+
+#section-three .content-box{
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+#section-three .box{
+  height: 480px;
+  width: 300px;
+  background-color: var(--main);
+  transition: 0.4s;
+  border-radius: 10px 10px 35px 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+#section-three .box img{
+  height: 50px;
+}
+
+#section-three .title-box{
+  margin-top: 15px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#section-three .title-box p:first-child{
+  color: var(--white);
+  text-align: center;
+  font-weight: 550;
+  font-family: 'CarlaSans';
+}
+
+#section-three .title-box p{
+  color: var(--white);
+  text-align: center;
+}
+
+#section-three .text-box{
+  height: 170px;
+  display: flex;
+  align-items: center;
+}
+
+#section-three .text-box p{
+  color: var(--white);
+  text-align: center;
+}
+
+#section-three .btn-know-more{
+  margin-top: 10px;
+}
+
+#section-three .btn-know-more a{
+  background-color: var(--secondary);
+  color: var(--main);
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 7px 7px 30px 7px;
+  font-weight: 550;
+  font-family: 'CarlaSans';
+  transition: 0.3s;
+}
+
+#section-three .btn-know-more a:hover{
+  background-color: var(--tertiary);
+}
+
+#section-three .content-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+#section-three .info{
+  border: 1px solid red;
+  height: 400px;
+  width: 400px;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.accordion-header {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px;
+  border-top: 1px solid #ccc;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+  background-color: #444;
+}
+
+.accordion-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+  padding: 0 15px;
+  background-color: #fff;
+}
+
+.accordion-content.open {
+  padding: 15px; /* Ajusta o padding quando aberto */
+}
+
