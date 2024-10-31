@@ -18,8 +18,11 @@
 #header.scrolled {
   background-color: var(--main);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  border-bottom: 3px solid var(--secondary);
-  color: var(--secondary);
+  border-bottom: 3px solid #ab8e6d;
+}
+
+#header.scrolled #menu a {
+  color: var(--secondary); /* Ajuste conforme a cor desejada */
 }
 
 #nav{
@@ -133,6 +136,7 @@
   display: flex;
   align-items: center;
   height: 100vh;
+  flex-wrap: wrap;
   
 }
 
@@ -216,11 +220,6 @@
   margin-top: 80px;
 }
 
-/* #section-two .content-left .box{
-  height: 400px;
-  width: 400px;
-  background-color: var(--tertiary);
-} */
 
 #section-two .content-right p{
   color: var(--secondary);
@@ -316,6 +315,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 #section-three .content-box{
@@ -333,17 +333,17 @@
   flex-direction: column;
   align-items: center;
   padding: 25px;
-  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  position: relative;
 }
 
 #section-three .box::before {
   content: "";
   position: absolute;
-  left: 0; /* Posiciona a borda à esquerda */
-  top: 50px; /* Ajuste para definir a posição vertical da borda */
-  height: 280px; /* Define a altura da borda */
-  width: 2px; /* Espessura da borda */
-  background-color: var(--secondary); /* Cor da borda */
+  left: 0; 
+  top: 50px; 
+  height: 280px; 
+  width: 2px; 
+  background-color: #ab8e6d; 
 }
 
 #section-three .box img{
@@ -360,10 +360,11 @@
 }
 
 #section-three .title-box p:first-child{
-  color: var(--white);
+  color: #ab8e6d;
   text-align: center;
-  font-weight: 550;
+  font-weight: 600;
   font-family: 'CarlaSans';
+  font-size: 18px;
 }
 
 #section-three .title-box p{
@@ -380,21 +381,6 @@
 #section-three .text-box p{
   color: var(--white);
   text-align: center;
-}
-
-#section-three .btn-know-more{
-  margin-top: 10px;
-}
-
-#section-three .btn-know-more a{
-  background-color: var(--secondary);
-  color: var(--main);
-  padding: 15px 25px;
-  text-decoration: none;
-  border-radius: 7px 7px 30px 7px;
-  font-weight: 550;
-  font-family: 'CarlaSans';
-  transition: 0.3s;
 }
 
 #section-three .btn-contact-us{
@@ -415,57 +401,12 @@
   border-radius: 7px 7px 30px 7px;
   text-decoration: none;
   font-family: 'CarlaSans';
+  transition: 0.3s;
 }
 
-/* #section-three .btn-know-more a:hover{
-  background-color: var(--tertiary);
+#section-three .btn-contact-us a:hover{
+  margin-left: 30px;
+
 }
 
-#section-three .content-info{
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin-top: 70px;
-}
-
-
-#section-three .accordion-item {
-  border-top: 1px solid var(--secondary);
-  margin-top: 20px;
-}
-
-#section-three .accordion-header {
-  background-color: var(--main);
-  padding: 15px;
-  cursor: pointer;
-  font-weight: 550;
-  transition: background-color 0.3s;
-  color: var(--white);
-  font-family: 'CarlaSans';
-}
-
-#section-three .accordion-header:hover {
-  background-color: var(--tertiary);
-}
-
-#section-three .accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-  padding: 0 15px;
-}
-
-#section-three .accordion-content p {
-  padding: 15px 0;
-  margin: 0;
-}
-
-#section-three .active .accordion-content {
-  max-height: 280px; 
-  padding: 15px;
-}
-
-#section-three .accordion span{
-  font-family: 'CarlaSans';
-} */
 

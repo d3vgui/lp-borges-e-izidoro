@@ -125,7 +125,7 @@
               </div>
               <div class="title-box">
                 <p>AUDIÊNCIA DE CUSTÓDIA</p>
-                <p>SUA PRISÃO FOI EFETUADA LEGALMENTE? SAIBA NA AUDIÊNCIA DE CUSTÓDIA.</p>
+                <p>SUA PRISÃO FOI EFETUADA LEGALMENTE? SAIBA NA AUDIÊNCIA DE CUSTÓDIA</p>
               </div>
               <div class="text-box">
                 <p>Garantimos assistência especializada em audiências de custódia, garantindo defesa ágil e proteção dos direitos do cliente desde o início do processo.</p>
@@ -136,53 +136,25 @@
             <a href="" title="Clique aqui para entrar em contato via WhatsApp"><i class="fa-brands fa-whatsapp"></i>ENTRE EM CONTATO</a>
           </div>
         </div>
-        <!-- <div class="content-info">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <div class="img-info">
-                <img src="images/balanca.png" alt="Balança" title="Balança" class="img-responsive">
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <div class="info">
-                <div class="accordion">
-                  <div class="accordion-item">
-                    <div class="accordion-header">FLAGRANTE 24H</div>
-                    <div class="accordion-content">
-                      <p>A prisão em flagrante ocorre quando alguém é detido durante ou logo após a prática de um crime, sendo essencial garantir o cumprimento dos seus direitos. A <span>Borges & Izidoro</span> oferece atendimento jurídico 24 horas para esses casos, com defesa rápida e qualificada. Orientamos familiares e representamos o cliente desde a abordagem até a audiência de custódia, assegurando assistência completa e proteção dos direitos em todas as etapas iniciais do processo.</p>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <div class="accordion-header">BUSCA E APREENSÃO</div>
-                    <div class="accordion-content">
-                      <p>Em casos de apreensão de bens como celulares, armas licenciadas, valores e veículos durante um inquérito policial, é fundamental contar com um suporte jurídico eficaz para garantir a recuperação desses itens. A <span>Borges & Izidoro</span> oferece assistência especializada para assegurar a devolução de bens apreendidos, atuando com rapidez e precisão para proteger os direitos do cliente e garantir que o processo seja conduzido de forma legal e transparente.</p>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <div class="accordion-header">AUDIÊNCIA DE CUSTÓDIA</div>
-                    <div class="accordion-content">
-                      <p>A audiência de custódia é o momento em que a pessoa detida é apresentada a um juiz logo após a prisão, para que seja avaliada a legalidade e a necessidade de manter a prisão. Nessa fase, é crucial contar com um advogado experiente que possa defender os direitos do detido, apresentando argumentos que visem à liberdade ou alternativas à prisão. A <span>Borges & Izidoro</span> oferece suporte especializado em audiências de custódia, assegurando uma defesa ágil e qualificada para proteger os direitos do cliente desde o início do processo.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div> -->
       </div>
     </div>
   </section>
 </main>
 </body>
-  <script>
-    document.addEventListener('scroll', function () {
+<script>
+  document.addEventListener('scroll', function () {
     const header = document.getElementById('header');
-    
+    const logo = document.getElementById('logo').querySelector('img');
+
     if (window.scrollY > 0) {
       header.classList.add('scrolled');
+      logo.src = 'images/logo-branco.png'; // Define a logo branca
     } else {
       header.classList.remove('scrolled');
+      logo.src = 'images/logo.png'; // Define a logo original
     }
   });
-  </script>
+</script> 
   <script>
     document.querySelectorAll('.accordion-header').forEach(header => {
     header.addEventListener('click', () => {
