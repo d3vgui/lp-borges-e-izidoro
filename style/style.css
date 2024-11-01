@@ -90,6 +90,7 @@
     background: none;
     cursor: pointer;
     gap: 0.5rem;
+    color: white;
   }
   #hamburger {
     border-top: 2px solid;
@@ -195,15 +196,12 @@
   color: var(--main);
 }
 
-#section-one .content-right img{
-  height: 450px;
-}
-
 /* ----- SECTION TWO ----- */
 
 #section-two{
   padding: 80px 0px;
-  background-color: var(--main);
+  background: linear-gradient(to bottom, var(--main), #596e96);
+
 }
 
 #section-two .title h2{
@@ -218,6 +216,7 @@
   flex-wrap: wrap;
   align-items: center;
   margin-top: 80px;
+  
 }
 
 
@@ -275,6 +274,7 @@
   animation: upDown 2s  infinite;
 }
 
+
 /* ----- SECTION THREE ----- */
 
 #section-three{
@@ -325,7 +325,7 @@
 }
 
 #section-three .box {
-  height: 360px;
+  height: 385px;
   width: 300px;
   background-color: var(--main);
   transition: 0.4s;
@@ -344,6 +344,12 @@
   height: 280px; 
   width: 2px; 
   background-color: #ab8e6d; 
+}
+
+#section-three .img-box{
+  background-color: #ab8e6d;
+  border-radius: 10px;
+  padding: 6px;
 }
 
 #section-three .box img{
@@ -406,7 +412,60 @@
 
 #section-three .btn-contact-us a:hover{
   margin-left: 30px;
-
 }
 
+/* ----- SECTION FOUR ----- */
+
+#section-four{
+  padding: 80px 0;
+  background-color: var(--tertiary);
+}
+
+#section-four .title h2{
+  text-align: center;
+  font-family: 'CarlaSans';
+}
+
+#section-four .title p{
+  text-align: center;
+  font-weight: bold;
+}
+
+#section-four .content-sec-four{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+#section-four .swiper{
+  height: 430px;
+}
+
+#section-four .swiper-slide {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  padding: 20px;
+  height: 380px;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#section-four .name p{
+  text-align: center;
+  font-weight: bold;
+}
+
+#section-four .text{
+  height: 250px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#section-four .stars i{
+  color: yellow;
+}
 

@@ -9,9 +9,12 @@
   <link rel="stylesheet" href="style/colors.css">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/config.css">
-  <script src="js/menu-mobile.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="js/menu-mobile.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="js/scroll.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/ae7baaf355.js" crossorigin="anonymous"></script>
   <title>Borges & Izidoro - Advocacia Criminal</title>
@@ -67,7 +70,7 @@
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <div class="content-left">
             <div class="box">
-              <img src="images/balanca.png" alt="">
+              <img src="images/lady-justice.png" alt="Lady Justice" title="Lady Justice" class="img-responsive">
             </div>
           </div>
         </div>
@@ -78,9 +81,10 @@
               A luta de seus clientes e suas famílias é também a delas.</p>
           </div>
           <div class="btn-next">
-            <a href="">ÁREAS DE ATUAÇÃO<i class="fa-solid fa-chevron-down"></i></a>
+            <a href="#section-three">ÁREAS DE ATUAÇÃO<i class="fa-solid fa-chevron-down"></i></a>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
@@ -135,9 +139,102 @@
           <div class="btn-contact-us">
             <a href="" title="Clique aqui para entrar em contato via WhatsApp"><i class="fa-brands fa-whatsapp"></i>ENTRE EM CONTATO</a>
           </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+  <section id="section-four">
+    <div class="container">
+      <div class="title">
+        <h2>O QUE OS NOSSOS CLIENTES ESTÃO FALANDO?</h2>
+        <p>Confira alguns dos nossos feedbacks.</p>
+      </div>
+      <div class="content-sec-four">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="name">
+                <p>Renato Moura</p>
+              </div>
+              <div class="text">
+                <p>Ótimo atendimento, super indico!</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="name">
+                <p>Igor Barbosa</p>
+              </div>
+              <div class="text">
+                <p>Agradeço muito a Dra. Verônica. Foi excelente durante o processo, não deixou nenhuma dúvida, agradeço muito e super recomendo.</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="name">
+                <p>Valéria Cunha</p>
+              </div>
+              <div class="text">
+                <p>Em nome da minha família, eu gostaria de agradecê-las imensamente por ter conseguido a liberdade provisória do meu marido. Somos gratos a vocês por todo empenho e dedicação nessa empreitada jurídica na qual, sem a direção de vocês, não teríamos tido tanto sucesso.</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="name">
+                <p>Guilherme Oliveira</p>
+              </div>
+              <div class="text">
+                <p>Agradeço imensamente as Doutoras Verônica e Bruna por todo o suporte e apoio durante todo o processo!</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="name">
+                <p>Karla Silva</p>
+              </div>
+              <div class="text">
+                <p>Super recomendo! Tiraram todas as minhas dúvidas e foram super ateciosas!</p>
+              </div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-    </div>
+  </div>
   </section>
 </main>
 </body>
@@ -148,10 +245,10 @@
 
     if (window.scrollY > 0) {
       header.classList.add('scrolled');
-      logo.src = 'images/logo-branco.png'; // Define a logo branca
+      logo.src = 'images/logo-branco.png'; 
     } else {
       header.classList.remove('scrolled');
-      logo.src = 'images/logo.png'; // Define a logo original
+      logo.src = 'images/logo.png'; 
     }
   });
 </script> 
@@ -160,16 +257,52 @@
     header.addEventListener('click', () => {
       const accordionItem = header.parentElement;
       
-      // Fechar todos os itens abertos
+      
       document.querySelectorAll('.accordion-item').forEach(item => {
         if (item !== accordionItem) {
           item.classList.remove('active');
         }
       });
       
-      // Alternar o item atual
       accordionItem.classList.toggle('active');
     });
   });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+      
+      1440: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      
+      425: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 30,
+      },
+    },
+    });
   </script>
 </html>
