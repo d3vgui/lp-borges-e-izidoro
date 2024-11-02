@@ -469,3 +469,60 @@
   color: yellow;
 }
 
+/* ----- SECTION FIVE ----- */
+
+#section-five{
+  padding: 80px 0;
+  background-color: var(--white);
+}
+
+#section-five .title h2{
+  font-family: 'CarlaSans';
+  text-align: center;
+}
+
+#section-five .content-sec-five{
+  margin-top: 70px;
+
+}
+
+#section-five .accordion-item {
+  margin-top: 20px;
+}
+
+#section-five .accordion-header {
+  width: 100%;
+  padding: 1rem;
+  background: var(--main);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 10px;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#section-five .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 1rem;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}
+
+#section-five .accordion-content p{
+  margin: 20px 0;
+}
+
+#section-five .accordion-header i {
+  transition: transform 0.3s ease;
+}
+
+#section-five .accordion-header i.rotate {
+  transform: rotate(90deg); /* Ajuste o ângulo conforme necessário */
+}
+

@@ -236,6 +236,66 @@
       </div>
   </div>
   </section>
+  <section id="section-five">
+    <div class="container">
+      <div class="title"><h2>PRINCIPAIS DÚVIDAS</h2></div>
+      <div class="content-sec-five">
+          <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">
+              O que caracteriza o flagrante? <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Flagrante ocorre quando uma pessoa é surpreendida cometendo um crime, logo após cometê-lo, ou em situações que evidenciem sua autoria, como a posse de objetos roubados. O flagrante pode ser classificado em três tipos: próprio, impróprio e presumido. Durante a prisão em flagrante, a pessoa detida tem direitos assegurados, como o direito a um advogado e à comunicação da prisão a um familiar ou pessoa de sua confiança.</p>
+            </div>
+          </div>
+        
+          <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">
+              Como funciona o flagrante 24h? <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="accordion-content">
+              <p>A prisão em flagrante pode ocorrer em qualquer horário, inclusive em finais de semana e feriados, e é chamada de “24h” pois não depende do horário de expediente policial. Assim que ocorre, a pessoa detida deve ser levada à presença de um juiz para uma audiência de custódia, normalmente dentro de 24 horas, onde será decidido se a prisão será mantida ou se o indivíduo poderá responder em liberdade.</p>
+            </div>
+          </div>
+        
+          <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">
+              Quando e como a busca e apreensão podem ser realizadas? <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="accordion-content">
+              <p>A busca e apreensão devem ser autorizadas por um mandado judicial, exceto em casos de flagrante delito ou situações de emergência em que a polícia tem indícios claros de crime. O mandado judicial define o local a ser revistado e os objetos ou documentos que podem ser apreendidos. Essa medida é importante para coletar provas, mas deve ser feita dentro dos limites da lei, respeitando os direitos dos moradores ou donos do local.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">
+              O que pode ser apreendido em uma busca? <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Em uma busca, a polícia pode apreender objetos, documentos ou qualquer item que possa estar relacionado ao crime investigado. Isso inclui armas, dinheiro, dispositivos eletrônicos, como celulares e computadores, e substâncias ilegais. Porém, itens que não estejam relacionados ao crime ou que sejam protegidos por sigilo (como comunicações entre advogado e cliente) não devem ser apreendidos sem uma razão clara e dentro dos limites da autorização judicial.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">
+              Como funciona a audiência de custódia? <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="accordion-content">
+              <p>A audiência de custódia ocorre geralmente em até 24 horas após a prisão e é um momento no qual o juiz avalia se a prisão foi feita de forma legal, se o preso sofreu maus-tratos e se ele deve permanecer preso ou pode responder em liberdade. Durante a audiência, o preso pode ser assistido por um advogado, que tem o papel fundamental de garantir que os direitos do cliente sejam respeitados e, quando possível, buscar medidas alternativas à prisão.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">
+              Qual o papel do advogado na audiência de custódia? <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="accordion-content">
+              <p>O advogado tem um papel essencial na audiência de custódia, pois é responsável por defender os interesses do cliente, apresentar argumentos favoráveis à liberdade provisória e assegurar que a prisão tenha sido feita de forma legal e sem abusos. O advogado também pode solicitar medidas cautelares alternativas à prisão, como o uso de tornozeleira eletrônica, além de acompanhar e garantir que o direito do cliente à defesa seja plenamente respeitado.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
 </main>
 </body>
 <script>
@@ -304,5 +364,51 @@
       },
     },
     });
+  </script>
+  <script>
+function toggleAccordion(button) {
+  const content = button.nextElementSibling;
+
+  if (content.classList.contains('open')) {
+    content.classList.remove('open');
+    content.style.maxHeight = null;
+  } else {
+    // Fechar todas as outras seções, se necessário
+    const allContents = document.querySelectorAll('.accordion-content');
+    allContents.forEach((item) => {
+      if (item !== content) {
+        item.classList.remove('open');
+        item.style.maxHeight = null;
+      }
+    });
+
+    content.classList.add('open');
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+}
+  </script>
+  <script>
+    function toggleAccordion(button) {
+  const content = button.nextElementSibling;
+  const icon = button.querySelector('i');
+
+  if (content.classList.contains('open')) {
+    content.classList.remove('open');
+    icon.classList.remove('rotate');
+    content.style.maxHeight = null;
+  } else {
+    // Fecha outras seções abertas
+    document.querySelectorAll('.accordion-content').forEach((item) => {
+      item.classList.remove('open');
+      item.previousElementSibling.querySelector('i').classList.remove('rotate');
+      item.style.maxHeight = null;
+    });
+
+    content.classList.add('open');
+    icon.classList.add('rotate');
+    content.style.maxHeight = content.scrollHeight + "px";
+  }
+}
+
   </script>
 </html>
