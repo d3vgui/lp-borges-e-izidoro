@@ -18,11 +18,11 @@
 #header.scrolled {
   background-color: var(--main);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  border-bottom: 3px solid #ab8e6d;
+  border-bottom: 3px solid var(--border);
 }
 
 #header.scrolled #menu a {
-  color: var(--secondary); /* Ajuste conforme a cor desejada */
+  color: var(--secondary);
 }
 
 #nav{
@@ -58,30 +58,37 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 735px) {
   #menu {
     display: block;
     position: absolute;
     width: 100%;
-    top: 70px;
+    top: 90px;
     right: 0px;
-    background-color: var(--secondary);
+    background-color: var(--white);
     transition: 0.6s;
     z-index: 1000;
     height: 0px;
     visibility: hidden;
     overflow-y: hidden;
   }
+
+  #header.scrolled #menu a {
+    color: var(--main);
+  }
+
   #nav.active #menu {
     height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
   }
+
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   }
+
   #btn-mobile {
     display: flex;
     padding: 0.5rem 1rem;
@@ -131,12 +138,13 @@
   height: 100vh;
   background-color: #00000025;
   background-blend-mode: color;
+  display: flex;
+  align-items: center;
 }
 
 #section-one .content-sec-one{
   display: flex;
   align-items: center;
-  height: 100vh;
   flex-wrap: wrap;
   
 }
@@ -182,6 +190,7 @@
   border-radius: 7px 7px 30px 7px;
   font-weight: 500;
   transition: 0.4s;
+  border: 2px solid var(--main);
 }
 
 #section-one .btn-contact-us i{
@@ -200,7 +209,9 @@
 
 #section-two{
   padding: 80px 0px;
-  background: linear-gradient(to bottom, var(--main), #596e96);
+  background-color: var(--main);
+  border-bottom: 5px solid var(--border);
+  background-image: url(/images/bg-3.png);
 
 }
 
@@ -222,7 +233,6 @@
 
 #section-two .content-right p{
   color: var(--secondary);
-  font-weight: 510;
 }
 
 #section-two .content-right span{
@@ -280,6 +290,11 @@
 #section-three{
   padding: 80px 0;
   background-color: var(--white);
+  background-image: url(/images/bg-1.PNG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 
 #section-three .title h2{
@@ -343,11 +358,11 @@
   top: 50px; 
   height: 280px; 
   width: 2px; 
-  background-color: #ab8e6d; 
+  background-color: var(--border); 
 }
 
 #section-three .img-box{
-  background-color: #ab8e6d;
+  background-color: var(--border);
   border-radius: 10px;
   padding: 6px;
 }
@@ -366,7 +381,7 @@
 }
 
 #section-three .title-box p:first-child{
-  color: #ab8e6d;
+  color: var(--border);
   text-align: center;
   font-weight: 600;
   font-family: 'CarlaSans';
@@ -442,7 +457,7 @@
 }
 
 #section-four .swiper-slide {
-  background: #fff;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -466,7 +481,7 @@
 }
 
 #section-four .stars i{
-  color: yellow;
+  color: #ffd900;
 }
 
 /* ----- SECTION FIVE ----- */
@@ -474,6 +489,9 @@
 #section-five{
   padding: 80px 0;
   background-color: var(--white);
+  background-image: url(/images/bg-2.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #section-five .title h2{
@@ -524,5 +542,171 @@
 
 #section-five .accordion-header i.rotate {
   transform: rotate(90deg); /* Ajuste o ângulo conforme necessário */
+}
+
+/* ----- SECTION SIX ----- */
+
+#section-six{
+  padding: 80px 0;
+  background-color: var(--secondary);
+}
+
+#section-six .content-sec-six{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#section-six .content-right h3{
+  font-family: 'CarlaSans';
+  color: var(--main);
+}
+
+#section-six .content-right #p1{
+  font-weight: 600;
+}
+
+#section-six .content-right p{
+  color: var(--main);
+}
+
+#section-six .content-right span{
+  font-family: 'CarlaSans';
+}
+
+#section-six .btn-contact-us{
+  margin-top: 30px;
+}
+
+#section-six .btn-contact-us a{
+  color: var(--secondary);
+  background-color: var(--main);
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 7px 7px 30px 7px;
+  font-weight: 580;
+  font-family: 'CarlaSans';
+  transition: 0.4s;
+  border: 2px solid var(--main);
+}
+
+#section-six .btn-contact-us i{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+#section-six .btn-contact-us a:hover{
+  background-color: var(--secondary);
+  color: var(--main);
+  margin-left: 30px;
+}
+
+/* ----- SECTION SEVEN ----- */
+
+#section-seven{
+  padding: 80px 0;
+  background-color: var(--white);
+}
+
+#section-seven .content-sec-seven{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section-seven .content-sec-seven h2{
+  text-align: center;
+  font-family: 'CarlaSans';
+}
+
+#section-seven .content-sec-seven p{
+  text-align: center;
+  margin-top: 30px;
+}
+
+#section-seven .btn-contact-us{
+  margin-top: 30px;
+}
+
+#section-seven .btn-contact-us a{
+  background-color: var(--main);
+  color: var(--white);
+  text-decoration: none;
+  padding: 25px;
+  border-radius: 10px 10px 40px 10px;
+  border: 2px solid var(--main);
+  font-family: 'CarlaSans';
+  font-weight: 580;
+  transition: 0.4s;
+}
+
+#section-seven .btn-contact-us a:hover{
+  margin-left: 30px;
+  background-color: var(--white);
+  color: var(--main);
+}
+
+#section-seven .btn-contact-us i{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+/* ----- FOOTER ----- */
+
+footer{
+  padding: 80px 0;
+  background-color: var(--main);
+  border-top: 5px solid var(--border);
+}
+
+footer .content-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer .logo-footer {
+  display: flex;
+  align-items: center;
+  height: 170px;
+}
+
+footer .logo-footer img {
+  width: 280px;
+}
+
+footer .content-footer ul {
+  padding: 0px !important;
+}
+
+footer .content-footer li {
+  list-style-type: none;
+}
+
+
+footer .content-footer h3 {
+  font-size: 18px;
+  color: var(--white);
+  font-weight: 580;
+  font-family: 'CarlaSans';
+}
+
+footer .content-footer a {
+  font-size: 18px;
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+
+footer .content-footer a:hover {
+  color: var(--tertiary);
+}
+
+footer .content-footer i {
+  font-size: 14px;
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 8px;
 }
 
