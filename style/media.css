@@ -178,9 +178,29 @@ footer .col-lg-4 {
     display: none;
 }
 
-  #section-three .box::before {
-    height: 0px;
+#section-one .text h2 {
+  text-align: center;
+}
 
+#section-one .text p {
+  text-align: center;
+}
+
+#section-one .text h3 {
+  text-align: center;
+}
+
+#section-one .btn-contact-us {
+  display: flex;
+  justify-content: center;
+}
+
+#section-two .content-sec-two {
+  margin-top: 50px;
+}
+
+#section-three .box::before {
+    height: 0px;
 }
 
 #section-three .title-content h2 {
