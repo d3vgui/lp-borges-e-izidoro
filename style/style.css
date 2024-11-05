@@ -410,18 +410,19 @@
 #section-three .content-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 10px;
+  justify-content: center;
 }
 
 #section-three .box {
-  height: 385px;
-  width: 300px;
+  height: 460px;
+  width: 251px;
   background-color: var(--main);
   transition: 0.4s;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px;
+  padding: 20px;
   position: relative;
 }
 
@@ -430,7 +431,7 @@
   position: absolute;
   left: 0;
   top: 50px;
-  height: 280px;
+  height: 360px;
   width: 2px;
   background-color: var(--border);
 }
@@ -447,35 +448,51 @@
 
 #section-three .title-box {
   margin-top: 15px;
-  height: 170px;
+  height: 85px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+
 #section-three .title-box p:first-child {
   color: var(--border);
   text-align: center;
   font-weight: 600;
   font-family: 'CarlaSans';
-  font-size: 18px;
+  font-size: 17px;
 }
 
 #section-three .title-box p {
   color: var(--white);
   text-align: center;
+  margin: 0;
+}
+
+#section-three .subtitle{
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#section-three .subtitle p{
+  color: var(--white);
+  text-align: center;
+  margin: 0;
 }
 
 #section-three .text-box {
-  height: 150px;
+  height: 180px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #section-three .text-box p {
   color: var(--white);
   text-align: center;
+  margin: 0;
 }
 
 #section-three .btn-contact-us {
@@ -716,7 +733,6 @@
 }
 
 #section-seven .btn-contact-us a:hover {
-  margin-left: 30px;
   background-color: var(--white);
   color: var(--main);
 }
