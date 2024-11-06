@@ -199,6 +199,11 @@ footer .col-lg-4 {
   margin-top: 50px;
 }
 
+#section-three .box {
+  width: 280px;
+  border-bottom: 3px solid var(--border);
+}
+
 #section-three .box::before {
     height: 0px;
 }
