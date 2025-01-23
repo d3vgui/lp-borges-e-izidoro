@@ -284,7 +284,6 @@
   background-color: var(--main);
   border-bottom: 5px solid var(--border);
   background-image: url(/images/bg-3.webp);
-
 }
 
 #section-two .title h2 {
@@ -573,6 +572,86 @@
 
 #section-four .stars i {
   color: #ffd900;
+}
+
+/* ----- SECTION FORM ----- */
+
+#section-form {
+  padding: 80px 0px;
+  background-color: var(--main);
+  border-bottom: 5px solid var(--border);
+  background-image: url(/images/bg-3.webp);
+}
+
+#section-form .content-sec-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px
+}
+
+#section-form .title h2{
+  font-family: 'CarlaSans';
+  text-align: center;
+  color: var(--white);
+}
+
+#section-form .content-left label{
+  color: var(--white);
+  font-family: 'CarlaSans';
+  width: 80%;
+}
+
+#section-form .content-left input{
+  width: 80%;
+  border-radius: 15px;
+  height: 40px;
+  border: 3px solid var(--border);
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#section-form .content-left select{
+  width: 80%;
+  border-radius: 15px;
+  height: 40px;
+  border: 3px solid var(--border);
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#section-form .content-left textarea{
+  margin-top: 10px;
+  border-radius: 15px;
+  border: 3px solid var(--border);
+  padding: 10px;
+  width: 80%;
+}
+
+#section-form input:focus, textarea:focus{
+  outline: none;
+}
+
+#section-form .content-left button i{
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#section-form .content-left button{
+  padding: 12px;
+  width: 80%;
+  border-radius: 7px 7px 30px 7px;
+  border: none;
+  font-family: 'CarlaSans';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+#section-form .content-left button:hover{
+  transform: scale(0.9);
 }
 
 /* ----- SECTION FIVE ----- */

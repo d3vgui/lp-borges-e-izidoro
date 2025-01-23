@@ -304,6 +304,42 @@
         </div>
       </div>
     </section>
+    <section id="section-form">
+      <div class="container">
+        <div class="title">
+          <h2>ENTRE EM CONTATO</h2>
+        </div>
+        <div class="content-sec-form">
+          <div class="content-left col-lg-6 col-md-6 col-ms-12 col-xs-12">
+            <form id="contactForm">
+              <label for="name">NOME: *</label><br>
+              <input type="text" id="name" name="name" required placeholder="Digite o seu nome"><br><br>
+      
+              <label for="phone">TELEFONE: *</label><br>
+              <input type="tel" id="phone" name="phone" required placeholder="(12) 12345-6789"><br><br>
+      
+              <label for="opcao">SELECIONE A ÁREA DO SEU CASO: *</label><br>
+              <select id="opcao" name="opcao" required>
+                  <option value="" disabled selected>Selecione uma opção</option>
+                  <option value="Criminal">Criminal</option>
+                  <option value="Trabalhista">Trabalhista</option>
+                  <option value="Familiar">Familiar</option>
+                  <option value="Outro">Outro</option>
+              </select><br><br>
+      
+              <label for="case">NOS CONTE UM POUCO MAIS SOBRE O SEU CASO: *</label><br>
+              <textarea id="case" name="case" rows="6" required placeholder="Escreva aqui um pouco mais sobre o seu caso."></textarea><br><br>
+      
+              <button type="submit" value="Enviar"><i class="fa-solid fa-share"></i>Enviar</button>
+          </form>
+          </div>
+          <div class="content-right col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <img src="images/img-form.webp" alt="Entre em contato"
+                class="img-responsive" title="Entre em contato">
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="section-five">
       <div class="container">
         <div class="title">
@@ -486,6 +522,28 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 </body>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(this);
+      const formProps = Object.fromEntries(formData);
+      const message = `Olá, Borges & Izidoro Advocacia! 
+      
+Meu nome é ${formProps.name}, e estou entrando em contato porque gostaria de tratar sobre o meu caso:
+
+Área de caso: ${formProps.opcao}
+Telefone para contato: ${formProps.phone}
+
+Mensagem detalhada:
+${formProps.case}`;
+      const whatsappURL = `https://api.whatsapp.com/send?phone=5511997394310&text=${encodeURIComponent(message)}`;
+
+      window.open(whatsappURL, '_blank');
+  });
+</script>
+
 <script>
   document.addEventListener('scroll', function () {
     const header = document.getElementById('header');

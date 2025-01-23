@@ -139,6 +139,36 @@ margin-top: 130px;
   gap: 20px;
 }
 
+/* ----- SECTION FORM ----- */
+
+#section-form .content-sec-form {
+  flex-direction: column;
+}
+
+#section-form .content-left label {
+  width: 100%;
+}
+
+#section-form .content-left input {
+  width: 100%;
+}
+
+#section-form .content-left select {
+  width: 100%;
+}
+
+#section-form .content-left textarea {
+  width: 100%;
+}
+
+#section-form .content-left button {
+  width: 100%;
+}
+
+#section-form .content-right img{
+  margin-top: 40px;
+}
+
 /* ----- SECTION SIX ----- */
 
 #section-six .content-sec-six {
